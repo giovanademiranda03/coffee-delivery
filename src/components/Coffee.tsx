@@ -3,10 +3,10 @@
 import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
 import Image from "next/image";
 import { useContext, useState } from "react";
-import Product from "@/app/data";
+import { ProductProps } from "@/app/data";
 import { CartContext } from "../context/Cart";
 
-export default function Coffee({ product }: { product: Product }) {
+export default function Coffee({ product }: { product: ProductProps }) {
   const [counter, setCounter] = useState(1);
   const { addProduct } = useContext(CartContext);
 

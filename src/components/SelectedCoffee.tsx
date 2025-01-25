@@ -1,14 +1,18 @@
 "use client";
 
-import { CartContext } from "@/context/Cart";
+import { CartContext, type CartProduct } from "@/context/Cart";
 import { Minus, Plus, Trash } from "@phosphor-icons/react";
 import { useContext } from "react";
 
-import Product from "@/app/data";
+import { ProductProps } from "@/app/data";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function SelectedCoffee({ product }: { product: Product }) {
+interface SelectedCoffeeProps {
+  product: CartProduct[];
+}
+
+export default function SelectedCoffee({ product }: SelectedCoffeeProps) {
   const { cart, increaseQuantity, decreaseQuantity, removeProduct } =
     useContext(CartContext);
   const totalItemsValue = cart.reduce(

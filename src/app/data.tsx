@@ -1,4 +1,4 @@
-export default interface Product {
+export interface ProductProps {
   id: number;
   title: string;
   description: string;
@@ -8,7 +8,7 @@ export default interface Product {
   quantity: number;
 }
 
-export const DataProducts: Product[] = [
+export const DataProducts: ProductProps[] = [
   {
     id: 1,
     title: "Café Pele",
@@ -150,8 +150,8 @@ export const DataProducts: Product[] = [
     quantity: 0,
   },
 ];
-export const getProductById = (id: number): Product | undefined => {
+export const getProductById = (id: number): ProductProps | undefined => {
   return DataProducts.find((p) => p.id === id);
 };
 
-export const getAllProducts = (): Product[] => DataProducts;
+export const getAllProducts = (): ProductProps[] => DataProducts;

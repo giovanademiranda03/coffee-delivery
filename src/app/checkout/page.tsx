@@ -3,9 +3,11 @@
 import FormPayment from "@/components/FormPayment";
 import MethodPayment from "@/components/MethodPayment";
 import SelectedCoffee from "@/components/SelectedCoffee";
-import type Product from "../data";
+import { useContext } from "react";
+import { CartContext } from "@/context/Cart";
 
-export default function Checkout({ product }: { product: Product }) {
+export default function Checkout() {
+  const { cart } = useContext(CartContext);
   return (
     <div className="max-w-7xl w-full flex flex-col md:flex-row justify-between p-4">
       <div className="flex flex-col w-full md:w-[60%]">
@@ -21,7 +23,7 @@ export default function Checkout({ product }: { product: Product }) {
           <h2 className="font-Baloo font-bold text-lg text-subtitle mb-4">
             Cafés selecionados
           </h2>
-          <SelectedCoffee product={product} />
+          <SelectedCoffee product={cart} />
         </div>
       </div>
     </div>

@@ -7,6 +7,9 @@ import { DeliveryProvider } from "@/context/Delivery";
 export const metadata: Metadata = {
   title: "Coffee Delivery",
   description: "Gerenciador de carrinho de compras de uma cafeteria fictícia",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
