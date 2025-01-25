@@ -11,8 +11,8 @@ import { DataProducts } from "./data";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl w-full flex flex-col items-center justify-center px-4 py-4 overflow-x-clip">
-      <div className="flex flex-col w-full justify-center items-center mb-14 mt-4 md:flex-row ">
+    <div className="max-w-7xl w-full flex flex-col items-center justify-center px-10 py-4 overflow-x-clip">
+      <div className="grid grid-cols-2 w-full justify-center items-center mb-14 mt-4 max-[960px]:grid-cols-1 ">
         <div className="flex flex-col gap-8">
           <h1 className="w-[90%] font-Baloo text-title text-3xl md:text-5xl font-bold leading-10">
             Encontre o café perfeito para qualquer hora do dia
@@ -52,16 +52,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Image src={CoffeeImg} alt="Café" priority />
+        <Image
+          src={CoffeeImg}
+          alt="Café"
+          priority
+          className="object-cover w-full max-[960px]:max-w-xl"
+        />
       </div>
       <div className="flex w-full">
-        <h2 className="font-Baloo font-bold text-3xl text-subtitle">
+        <h2 className="font-Baloo font-bold text-3xl text-subtitle max-[790px]:justify-center">
           Nossos cafés
         </h2>
       </div>
       <div
         data-cy="coffee-list"
-        className="w-full justify-center grid-coffee mt-10 md:justify-between gap-9 md:gap-y-4"
+        className="w-full justify-center grid-coffee mt-10 gap-6"
       >
         {DataProducts.map((product) => (
           <Coffee key={product.id} product={product} />

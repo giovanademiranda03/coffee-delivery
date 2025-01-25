@@ -59,7 +59,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full flex max-w-7xl justify-between items-center p-5">
+    <header className="w-full flex max-w-7xl justify-between items-center py-5 px-10">
       <div className="flex">
         <Link data-cy="logo" href="/">
           <Image src={logo} alt="Logotipo" priority />

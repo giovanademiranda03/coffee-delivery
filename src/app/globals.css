@@ -31,6 +31,6 @@ body {
 
 .grid-coffee {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 17rem);
-  grid-template-rows: repeat(4, 21rem);
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-rows: repeat(4, 20rem);
 }
