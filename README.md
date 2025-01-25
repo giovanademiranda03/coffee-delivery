@@ -19,16 +19,22 @@ Aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia
 
 ## Tecnologias
 
-- NEXT.js
+- NextJS
+- ReacJS
+- TypeScript
+- TailwindCSS
+- Cypress
 
 ## Funcionalidades
 
 - Listagem de produtos (cafés) disponíveis para compra
 - Adicionar uma quantidade específicas de itens no carrinho
 - Aumentar ou remover a quantidade de itens no carrinho
-- Formulário para o usuário preencher o seu endereço
+- Formulário para o usuário preencher o seu endereço com cep promise
 - Exibir o total de itens no carrinho no Header
+- Exibir o endereço no Header
 - Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
+- Lista os dados adicionados ao formulario na tela de sucesso.
 
 ## Instalação
 
