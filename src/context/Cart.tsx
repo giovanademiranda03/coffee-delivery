@@ -2,7 +2,7 @@
 
 import useStateLocal from "@/hooks/useStateLocal";
 import { ReactNode, createContext } from "react";
-import Product, { getProductById } from "@/data";
+import Product, { getProductById } from "@/app/data";
 
 export interface CartProduct extends Product {
   id: number;

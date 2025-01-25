@@ -3,7 +3,7 @@
 import { Minus, Plus, ShoppingCart } from "@phosphor-icons/react";
 import Image from "next/image";
 import { useContext, useState } from "react";
-import Product from "@/data";
+import Product from "@/app/data";
 import { CartContext } from "../context/Cart";
 
 export default function Coffee({ product }: { product: Product }) {

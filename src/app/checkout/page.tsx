@@ -3,7 +3,7 @@
 import FormPayment from "@/components/FormPayment";
 import MethodPayment from "@/components/MethodPayment";
 import SelectedCoffee from "@/components/SelectedCoffee";
-import Product from "@/data";
+import type Product from "../data";
 
 export default function Checkout({ product }: { product: Product }) {
   return (

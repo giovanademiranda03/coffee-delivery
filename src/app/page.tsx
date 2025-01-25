@@ -7,7 +7,7 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import CoffeeImg from "@/assets/coffee.svg";
-import { DataProducts } from "@/data";
+import { DataProducts } from "./data";
 
 export default function Home() {
   return (

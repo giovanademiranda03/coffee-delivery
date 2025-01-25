@@ -4,7 +4,7 @@ import { CartContext } from "@/context/Cart";
 import { Minus, Plus, Trash } from "@phosphor-icons/react";
 import { useContext } from "react";
 
-import Product from "@/data";
+import Product from "@/app/data";
 import Image from "next/image";
 import Link from "next/link";
 
